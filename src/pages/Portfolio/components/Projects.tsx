@@ -14,7 +14,8 @@ const projects: ProjectType[] = [
     description:
       "A simple example of a shopping cart made in React with TypeScript, with state handling using contexts and extracting data from a JSON file.",
     technologies: ["React", "TypeScript", "CSS"],
-    sourceCode: "https://github.com/axeltrejodev",
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/ShoppingCart",
     visit: "/shopping-cart",
     external: false,
   },
@@ -24,7 +25,8 @@ const projects: ProjectType[] = [
     description:
       "Search engine for movies, TV shows and people using The Movie DB API, made in React with TypeScript.",
     technologies: ["React", "TypeScript", "CSS"],
-    sourceCode: "https://github.com/axeltrejodev",
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/MovieFinder",
     visit: "/movie-finder",
     external: false,
   },
@@ -34,7 +36,8 @@ const projects: ProjectType[] = [
     description:
       "Translator made in React with TypeScript that uses the ChatGPT API to generate quality translations.",
     technologies: ["React", "TypeScript", "CSS"],
-    sourceCode: "https://github.com/axeltrejodev",
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/Translator",
     visit: "/translator",
     external: false,
   },
@@ -44,7 +47,8 @@ const projects: ProjectType[] = [
     description:
       "Simple URL shortener that uses an external API to work made in React with TypeScript.",
     technologies: ["React", "TypeScript", "CSS"],
-    sourceCode: "https://github.com/axeltrejodev",
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/Shortener",
     visit: "/shortener",
     external: false,
   },
@@ -54,7 +58,8 @@ const projects: ProjectType[] = [
     description:
       "To-do list manager made in React with TypeScript, with state handling using contexts and data persistence in local storage.",
     technologies: ["React", "TypeScript", "CSS"],
-    sourceCode: "https://github.com/axeltrejodev",
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/ToDo",
     visit: "/to-do",
     external: false,
   },
@@ -64,7 +69,8 @@ const projects: ProjectType[] = [
     description:
       "The classic game made in React with TypeScript, with state handling using contexts and data persistence in local storage.",
     technologies: ["React", "TypeScript", "CSS"],
-    sourceCode: "https://github.com/axeltrejodev",
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/TicTacToe",
     visit: "/tic-tac-toe",
     external: false,
   },
