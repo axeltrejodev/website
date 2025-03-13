@@ -1,0 +1,37 @@
+ignore {
+  --background-color: #eee;
+  --emphasis-color: #b9f;
+  --tab-color: #fff6;
+  --border-color: #fff8;
+  --primary-color: #000;
+  --secondary-color: #0008;
+}
+
+.translator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  & .original,
+  .translated {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 1rem;
+    & textarea {
+      resize: none;
+    }
+    & textarea:disabled {
+      opacity: 1;
+    }
+  }
+  & .actions {
+    display: flex;
+    column-gap: 0.5rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
