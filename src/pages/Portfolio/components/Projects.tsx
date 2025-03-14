@@ -2,6 +2,7 @@ import Project from "./Project";
 import { type Project as ProjectType } from "../types";
 import shoppingCart from "../assets/shopping-cart.webp";
 import movieFinder from "../assets/movie-finder.webp";
+import chat from "../assets/chat.webp";
 import translator from "../assets/translator.webp";
 import shortener from "../assets/shortener.webp";
 import toDo from "../assets/to-do.webp";
@@ -28,6 +29,17 @@ const projects: ProjectType[] = [
     sourceCode:
       "https://github.com/axeltrejodev/website/tree/master/src/pages/MovieFinder",
     visit: "/movie-finder",
+    external: false,
+  },
+  {
+    image: chat,
+    title: "Chat",
+    description:
+      "Chat application made in React with TypeScript that uses the ChatGPT API to generate quality responses.",
+    technologies: ["React", "TypeScript", "CSS"],
+    sourceCode:
+      "https://github.com/axeltrejodev/website/tree/master/src/pages/Chat",
+    visit: "/chat",
     external: false,
   },
   {

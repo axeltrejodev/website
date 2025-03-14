@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router";
 const Portfolio = lazy(() => import("../pages/Portfolio"));
 const ShoppingCart = lazy(() => import("../pages/ShoppingCart"));
 const MovieFinder = lazy(() => import("../pages/MovieFinder"));
+const Chat = lazy(() => import("../pages/Chat"));
 const Translator = lazy(() => import("../pages/Translator"));
 const Shortener = lazy(() => import("../pages/Shortener"));
 const ToDo = lazy(() => import("../pages/ToDo"));
@@ -17,6 +18,7 @@ function Main() {
           <Route path="/" element={<Portfolio />} />
           <Route path="/shopping-cart" element={<ShoppingCart />} />
           <Route path="/movie-finder" element={<MovieFinder />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/translator" element={<Translator />} />
           <Route path="/shortener" element={<Shortener />} />
           <Route path="/to-do" element={<ToDo />} />
