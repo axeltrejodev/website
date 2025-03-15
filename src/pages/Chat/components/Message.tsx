@@ -1,3 +1,4 @@
+import Markdown from "react-markdown";
 import { type Message as MessageType } from "../types";
 
 type Props = {
@@ -7,7 +8,9 @@ type Props = {
 function Message({ message }: Props) {
   return (
     <div className={`message ${message.incoming ? "incoming" : "outgoing"}`}>
-      <div className="content">{message.content}</div>
+      <div className="content">
+        <Markdown>{message.content}</Markdown>
+      </div>
       <div className="time">{message.time}</div>
     </div>
   );

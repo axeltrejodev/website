@@ -18,6 +18,7 @@
     "openai": "^4.87.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-markdown": "^10.1.0",
     "react-router": "^7.3.0",
     "remixicon": "^4.6.0",
     "tmdb-ts": "^2.0.1"
