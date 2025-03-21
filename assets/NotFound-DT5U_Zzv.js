@@ -1,0 +1,1 @@
+import{r as e,j as t}from"./index-xJiWdxKb.js";function r(){return e.useEffect(()=>{document.title="Axel Trejo - Not Found"},[]),t.jsxs(t.Fragment,{children:[t.jsx("h1",{children:"404"}),t.jsx("h2",{children:"Not Found"})]})}export{r as default};
