@@ -33,7 +33,7 @@ const projects: ProjectType[] = [
   },
   {
     image: chat,
-    title: "Chat",
+    title: "Chat with AI",
     description:
       "Chat application made in React with TypeScript that uses the ChatGPT API to generate quality responses.",
     technologies: ["React", "TypeScript", "CSS"],

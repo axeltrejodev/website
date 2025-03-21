@@ -5,7 +5,7 @@ import "./index.css";
 
 function Chat() {
   useEffect(() => {
-    document.title = "Axel Trejo - Chat";
+    document.title = "Axel Trejo - Chat with AI";
   }, []);
   return (
     <ChatProvider>

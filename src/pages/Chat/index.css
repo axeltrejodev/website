@@ -9,21 +9,18 @@ ignore {
 
 .chat-wrapper {
   width: 100%;
-  height: calc(100dvh - 9.666rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
   row-gap: 0.5rem;
   overflow-y: scroll;
   scrollbar-width: none;
   & .top {
-    & h1 {
-      text-align: center;
-    }
     & .chat {
       display: flex;
       flex-direction: column;
       row-gap: 0.5rem;
+      height: calc(100dvh - 16rem);
+      overflow-y: scroll;
+      scrollbar-width: none;
       & .message {
         border: 2px solid var(--border-color);
         background-color: var(--tab-color);
@@ -77,12 +74,12 @@ ignore {
 
 @keyframes fade-in-out {
   0% {
-    opacity: 0.5;
+    opacity: 0.25;
   }
   50% {
     opacity: 1;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.25;
   }
 }
