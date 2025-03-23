@@ -1,5 +1,6 @@
 import Project from "./Project";
 import { type Project as ProjectType } from "../types";
+import youtubeClone from "../assets/youtube-clone.webp";
 import shoppingCart from "../assets/shopping-cart.webp";
 import movieFinder from "../assets/movie-finder.webp";
 import chat from "../assets/chat.webp";
@@ -9,6 +10,16 @@ import toDo from "../assets/to-do.webp";
 import ticTacToe from "../assets/tic-tac-toe.webp";
 
 const projects: ProjectType[] = [
+  {
+    image: youtubeClone,
+    title: "YouTube Clone",
+    description:
+      "A clone of the YouTube frontend using the Data API v3 and state handling using contexts, made in React with TypeScript.",
+    technologies: ["React", "TypeScript", "CSS"],
+    sourceCode: "https://github.com/axeltrejodev/youtube-clone/tree/master",
+    visit: "https://axeltrejodev.github.io/youtube-clone",
+    external: true,
+  },
   {
     image: shoppingCart,
     title: "Shopping Cart",
