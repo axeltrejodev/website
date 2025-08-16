@@ -1,0 +1,27 @@
+{
+  "cSpell.words": [
+    "konami",
+    "oklch",
+    "sonner",
+    "toolhand",
+    "tratumex",
+    "trejo"
+  ],
+  "cSpell.language": "en,es-ES",
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.sortImports": "always",
+      "source.organizeImports": "always"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.sortImports": "always",
+      "source.organizeImports": "always"
+    }
+  },
+  "symbols.folders.associations": {
+    "messages": "folder-i18n",
+    "uva": "folder-purple"
+  }
+}
