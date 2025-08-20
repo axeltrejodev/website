@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "name": "Axel Trejo",
+    "title": "Transforming ideas into digital experiences",
+    "description": "From the first sketch to the last line of code, I turn ideas into soulful brands and digital products that attract, connect, and inspire.",
+    "preview": "Preview"
+  },
+  "utils": {
+    "submit": "Submit",
+    "loading": "Loading…",
+    "easterEgg": "Made with ❤️ by Axel Trejo"
+  },
+  "uva": {
+    "form": {
+      "invalid": "This field has incorrect data",
+      "mustBeString": "This field must be a string",
+      "mustBeText": "This field must not be empty",
+      "mustBeEmail": "This field must be an email address",
+      "mustBeObject": "This field must be an object"
+    }
+  },
+  "theme": {
+    "title": "Theme",
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "title": "Language",
+    "toggle": "Toggle language"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© {year} All rights reserved.",
+    "sourceCode": "Source Code"
+  },
+  "hero": {
+    "title": "Transforming ideas into digital experiences",
+    "description": "From the first sketch to the last line of code, I turn ideas into soulful brands and digital products that attract, connect, and inspire.",
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "Designing innovative digital solutions",
+    "badges": {
+      "webDevelopment": "Web Development",
+      "graphicDesign": "Graphic Design",
+      "programming": "Programming",
+      "branding": "Branding"
+    },
+    "description": "As a full stack developer with over two years of experience, I design and build modern, functional, and engaging digital experiences. I specialize in web technologies such as React, Next.js, Node.js, and TypeScript, creating efficient and scalable solutions.",
+    "addition": "In addition, I have experience in graphic design, contributing to the creation of logos, visual identities, and graphic elements that complement the final product. This allows me to offer end-to-end solutions that not only look professional and impactful but also work flawlessly."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "description": "Explore a selection of my most recent and significant work in development and design.",
+    "visit": "Visit",
+    "dev": "Under Development",
+    "list": {
+      "eagle": {
+        "title": "Eagle - All in one e-commerce platform",
+        "description": "High-end technology to build e-commerce experiences that inspire, connect and sell."
+      },
+      "toolhand": {
+        "title": "Toolhand - Technology and creativity at the service of your daily life",
+        "description": "Specialized in providing comprehensive IT solutions, including cellphone repair, website development, and point-of-sale software."
+      },
+      "tratumex": {
+        "title": "Tratumex - Transforming tourism in Mexico",
+        "description": "Association focused on tourism, bringing together service providers in this sector, such as tour operators, travel agencies, transporters, hoteliers, guides, and more."
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "description": "I master these technologies and tools to create complete and effective solutions."
+  },
+  "contact": {
+    "title": "Let's talk about your project",
+    "description": "I'm available to work with you. Fill out the form and I'll get in touch as soon as possible.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "John Doe"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "john@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "What would you like to talk about?"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Got an idea in mind? I'm all ears…"
+      },
+      "result": {
+        "success": {
+          "title": "Message sent successfully",
+          "content": "Thanks for reaching out. I'll respond as soon as possible."
+        },
+        "error": {
+          "title": "Failed to send message",
+          "content": "Something went wrong. I'm working on fixing it…"
+        }
+      }
+    },
+    "information": {
+      "title": "Contact Information",
+      "description": "If you prefer to reach me directly, you can do so via the following:",
+      "phoneNumber": "Phone Number",
+      "email": "Email"
+    }
+  }
+}

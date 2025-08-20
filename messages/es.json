@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "name": "Axel Trejo",
+    "title": "Transformando ideas en experiencias digitales",
+    "description": "Desde el primer trazo hasta la última línea de código, convierto ideas en marcas con alma y en productos digitales que atraen, conectan e inspiran.",
+    "preview": "Vista Previa"
+  },
+  "utils": {
+    "submit": "Enviar",
+    "loading": "Cargando…",
+    "easterEgg": "Hecho con ❤️ por Axel Trejo"
+  },
+  "uva": {
+    "form": {
+      "invalid": "Este campo contiene datos incorrectos",
+      "mustBeString": "Este campo debe ser una cadena de texto",
+      "mustBeText": "Este campo no debe estar vacío",
+      "mustBeEmail": "Este campo debe ser una dirección de correo electrónico",
+      "mustBeObject": "Este campo debe ser un objeto"
+    }
+  },
+  "theme": {
+    "title": "Tema",
+    "toggle": "Alternar tema"
+  },
+  "language": {
+    "title": "Idioma",
+    "toggle": "Alternar idioma"
+  },
+  "header": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "copyright": "© {year} Todos los derechos reservados.",
+    "sourceCode": "Código Fuente"
+  },
+  "hero": {
+    "title": "Transformando ideas en experiencias digitales",
+    "description": "Desde el primer trazo hasta la última línea de código, convierto ideas en marcas con alma y en productos digitales que atraen, conectan e inspiran.",
+    "contactMe": "Contáctame"
+  },
+  "about": {
+    "title": "Diseñando soluciones digitales innovadoras",
+    "badges": {
+      "webDevelopment": "Desarrollo Web",
+      "graphicDesign": "Diseño Gráfico",
+      "programming": "Programación",
+      "branding": "Branding"
+    },
+    "description": "Como desarrollador full stack con más de dos años de experiencia, diseño y construyo experiencias digitales modernas, funcionales y atractivas. Me especializo en tecnologías web como React, Next.js, Node.js y TypeScript, creando soluciones eficientes y escalables.",
+    "addition": "Además, cuento con experiencia en diseño gráfico, aportando en la creación de logotipos, identidades visuales y elementos gráficos que complementan el producto final. Esto me permite ofrecer soluciones integrales que no solo se ven profesionales e impactantes, sino que también funcionan a la perfección."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "description": "Explora una selección de mis trabajos más recientes y significativos en desarrollo y diseño.",
+    "visit": "Visitar",
+    "dev": "En Desarrollo",
+    "list": {
+      "eagle": {
+        "title": "Eagle - Plataforma de e-commerce todo en uno",
+        "description": "Tecnología de alto nivel para construir experiencias de e-commerce que inspiran, conectan y venden."
+      },
+      "toolhand": {
+        "title": "Toolhand - Tecnología y creatividad al servicio de tu día a día",
+        "description": "Especializados en brindar soluciones informáticas integrales, abarcando la reparación de celulares, el desarrollo de páginas web y software para puntos de venta."
+      },
+      "tratumex": {
+        "title": "Tratumex - Transformando el turismo en México",
+        "description": "Asociación enfocada en el turismo, que reúne a los prestadores de servicios de este sector, como operadores turísticos, agencias de viajes, transportistas, hoteleros, guías y más."
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades y Tecnologías",
+    "description": "Domino estas tecnologías y herramientas para crear soluciones completas y efectivas."
+  },
+  "contact": {
+    "title": "Hablemos de tu Proyecto",
+    "description": "Estoy disponible para trabajar contigo. Completa el formulario y me pondré en contacto contigo lo antes posible.",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Juan Pérez"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "juan@ejemplo.com"
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "¿Sobre qué quieres hablar?"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "¿Tienes una idea en mente? Te escucho…"
+      },
+      "result": {
+        "success": {
+          "title": "Mensaje enviado correctamente",
+          "content": "Gracias por contactarme. Responderé lo antes posible."
+        },
+        "error": {
+          "title": "No se pudo enviar el mensaje",
+          "content": "Parece que algo fue mal. Estoy trabajando para resolverlo…"
+        }
+      }
+    },
+    "information": {
+      "title": "Información de Contacto",
+      "description": "Si prefieres contactarme directamente, puedes hacerlo por los siguientes medios:",
+      "phoneNumber": "Número de Teléfono",
+      "email": "Correo Electrónico"
+    }
+  }
+}
