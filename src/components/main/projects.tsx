@@ -21,6 +21,7 @@ import eagle from "@/components/main/assets/projects/eagle.png";
 import toolhand from "@/components/main/assets/projects/toolhand.png";
 import tratumex from "@/components/main/assets/projects/tratumex.png";
 
+import { PROJECT_EMOJIS } from "@/lib/setup";
 import { cn } from "@/lib/utils";
 
 export async function Projects() {
@@ -147,7 +148,9 @@ export async function Projects() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="mb-2">{project.title}</CardTitle>
+                  <CardTitle className="mb-2 text-balance">
+                    {PROJECT_EMOJIS[index]} {project.title}
+                  </CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
                 <CardFooter className="mt-auto">
