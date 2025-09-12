@@ -3,7 +3,6 @@ import { type ReactNode } from "react";
 import { Background } from "@/components/main/background";
 import { Footer } from "@/components/main/footer";
 import { Header } from "@/components/main/header";
-import { Konami } from "@/components/main/konami";
 
 import { cn } from "@/lib/utils";
 
@@ -21,7 +20,6 @@ export default function MainLayout({ children }: Props) {
         "flex-col", //
       )}
     >
-      <Konami />
       <Background />
       <Header />
       <main
