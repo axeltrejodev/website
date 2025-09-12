@@ -1,4 +1,4 @@
-import { MailIcon, PhoneIcon } from "lucide-react";
+import { MailIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { LogoLinkedIn, LogoWhatsApp } from "@/components/globals/icons";
@@ -118,38 +118,30 @@ export async function Contact() {
               </CardHeader>
               <CardContent className="gap-4 grow-1">
                 <a
-                  href="tel:+525656703150"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={cn(
-                    button(),
-                    "grow-1",
-                    "w-full",
-                    "bg-blue-500/20",
-                    "text-blue-700",
-                    "dark:text-blue-300",
-                    "hover:text-primary-foreground!",
-                  )}
-                >
-                  <PhoneIcon />
-                  <span>{tI("phoneNumber")}</span>
-                </a>
-                <a
                   href="mailto:axeltrejo.dev@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={cn(
                     button(),
+                    "gap-0",
+                    "h-auto",
                     "grow-1",
                     "w-full",
+                    "flex-col",
                     "bg-purple-500/20",
                     "text-purple-700",
                     "dark:text-purple-300",
                     "hover:text-primary-foreground!",
+                    "hover:bg-primary!",
                   )}
                 >
-                  <MailIcon />
-                  <span>{tI("email")}</span>
+                  <div className="flex items-center gap-2">
+                    <MailIcon />
+                    <span>{tI("email")}</span>
+                  </div>
+                  <div className="opacity-70">
+                    <span>axeltrejo.dev@gmail.com</span>
+                  </div>
                 </a>
                 <a
                   href="https://linkedin.com/in/axeltrejodev"
@@ -157,16 +149,25 @@ export async function Contact() {
                   rel="noopener noreferrer"
                   className={cn(
                     button(),
+                    "gap-0",
+                    "h-auto",
                     "grow-1",
                     "w-full",
+                    "flex-col",
                     "bg-indigo-500/20",
                     "text-indigo-700",
                     "dark:text-indigo-300",
                     "hover:text-primary-foreground!",
+                    "hover:bg-primary!",
                   )}
                 >
-                  <LogoLinkedIn />
-                  <span>LinkedIn</span>
+                  <div className="flex items-center gap-2">
+                    <LogoLinkedIn />
+                    <span>LinkedIn</span>
+                  </div>
+                  <div className="opacity-70">
+                    <span>in/axeltrejodev</span>
+                  </div>
                 </a>
                 <a
                   href="https://wa.me/+525656703150"
@@ -174,16 +175,25 @@ export async function Contact() {
                   rel="noopener noreferrer"
                   className={cn(
                     button(),
+                    "gap-0",
+                    "h-auto",
                     "grow-1",
                     "w-full",
+                    "flex-col",
                     "bg-emerald-500/20",
                     "text-emerald-700",
                     "dark:text-emerald-300",
                     "hover:text-primary-foreground!",
+                    "hover:bg-primary!",
                   )}
                 >
-                  <LogoWhatsApp />
-                  <span>WhatsApp</span>
+                  <div className="flex items-center gap-2">
+                    <LogoWhatsApp />
+                    <span>WhatsApp</span>
+                  </div>
+                  <div className="opacity-70">
+                    <span>+52 56 5670 3150</span>
+                  </div>
                 </a>
               </CardContent>
             </Card>

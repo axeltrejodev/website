@@ -1,6 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
+import { SendHorizontalIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -77,7 +78,7 @@ export function ContactForm() {
             control={form.control}
             name="name"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="self-start">
                 <FormLabel>{t("name.label")}</FormLabel>
                 <FormControl>
                   <Input
@@ -94,7 +95,7 @@ export function ContactForm() {
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem>
+              <FormItem className="self-start">
                 <FormLabel>{t("email.label")}</FormLabel>
                 <FormControl>
                   <Input
@@ -141,7 +142,8 @@ export function ContactForm() {
           )}
         />
         <Button type="submit" disabled={isLoading}>
-          {isLoading ? tU("loading") : tU("submit")}
+          <span>{isLoading ? tU("loading") : tU("submit")}</span>
+          <SendHorizontalIcon className={cn({ hidden: isLoading })} />
         </Button>
       </form>
     </Form>
