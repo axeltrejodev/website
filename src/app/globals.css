@@ -57,6 +57,7 @@
   --border: oklch(0.92 0.004 286.32);
   --input: oklch(0.92 0.004 286.32);
   --ring: oklch(0.705 0.015 286.067);
+  --trail: oklch(0.141 0.005 285.823);
   /* Symbolic Colors */
   --destructive: oklch(58% 0.21576 9.456);
   --constructive: oklch(58% 0.11814 168.174);
@@ -104,6 +105,7 @@
     @apply text-foreground;
   }
   * {
+    @apply cursor-none!;
     @apply scroll-smooth;
     @apply font-sans border-border outline-ring/50;
     @apply selection:bg-primary selection:text-primary-foreground;

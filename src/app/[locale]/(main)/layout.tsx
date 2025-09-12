@@ -1,8 +1,10 @@
 import { type ReactNode } from "react";
 
 import { Background } from "@/components/main/background";
+import { DotCursor } from "@/components/main/cursor";
 import { Footer } from "@/components/main/footer";
 import { Header } from "@/components/main/header";
+import { MouseTrail } from "@/components/main/trail";
 
 import { cn } from "@/lib/utils";
 
@@ -21,6 +23,8 @@ export default function MainLayout({ children }: Props) {
       )}
     >
       <Background />
+      <DotCursor />
+      <MouseTrail />
       <Header />
       <main
         className={cn(
