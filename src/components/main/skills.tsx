@@ -1,4 +1,6 @@
+import { Globe2Icon, ShieldUserIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import { type ComponentType } from "react";
 
 import {
   BlurredDivItem,
@@ -9,6 +11,7 @@ import {
 import { Card } from "@/uva/card";
 
 import {
+  LogoBash,
   LogoCSS3,
   LogoExpress,
   LogoFlask,
@@ -17,20 +20,25 @@ import {
   LogoHTML5,
   LogoIllustrator,
   LogoJavaScript,
+  LogoLucide,
+  LogoMotion,
   LogoNext,
   LogoNode,
   LogoPostgreSQL,
   LogoPrisma,
   LogoPython,
+  LogoRadix,
   LogoReact,
+  LogoResend,
+  LogoSanity,
   LogoSQLAlchemy,
   LogoSQLite,
   LogoTailwind,
   LogoTypeScript,
+  LogoZod,
 } from "@/components/globals/icons";
 
 import { cn } from "@/lib/utils";
-import { type ComponentType } from "react";
 
 export async function Skills() {
   const t = await getTranslations("skills");
@@ -101,10 +109,7 @@ export async function Skills() {
         "text-black",
         "dark:text-white", //
       ],
-      background: [
-        "bg-black/20",
-        "dark:bg-black/80", //
-      ],
+      background: "bg-neutral-500/20",
     },
     {
       name: "Node.js",
@@ -179,6 +184,69 @@ export async function Skills() {
       background: "bg-blue-500/20",
     },
     {
+      name: "Sanity",
+      icon: LogoSanity,
+      foreground: [
+        "text-orange-700",
+        "dark:text-orange-300", //
+      ],
+      background: "bg-orange-500/20",
+    },
+    {
+      name: "Radix UI",
+      icon: LogoRadix,
+      foreground: [
+        "text-black",
+        "dark:text-white", //
+      ],
+      background: "bg-neutral-500/20",
+    },
+    {
+      name: "Motion",
+      icon: LogoMotion,
+      foreground: [
+        "text-yellow-700",
+        "dark:text-yellow-300", //
+      ],
+      background: "bg-yellow-500/20",
+    },
+    {
+      name: "Lucide",
+      icon: LogoLucide,
+      foreground: [
+        "text-rose-700",
+        "dark:text-rose-300", //
+      ],
+      background: "bg-rose-500/20",
+    },
+    {
+      name: "Resend",
+      icon: LogoResend,
+      foreground: [
+        "text-black",
+        "dark:text-white", //
+      ],
+      background: "bg-neutral-500/20",
+    },
+    {
+      name: "Zod",
+      icon: LogoZod,
+      foreground: [
+        "text-blue-700",
+        "dark:text-blue-300", //
+      ],
+      background: "bg-blue-500/20",
+    },
+    {
+      name: "Bash",
+      icon: LogoBash,
+      foreground: [
+        "text-emerald-700",
+        "dark:text-emerald-300", //
+      ],
+      background: "bg-emerald-500/20",
+    },
+    {
       name: "Git",
       icon: LogoGit,
       foreground: [
@@ -204,6 +272,24 @@ export async function Skills() {
         "dark:text-orange-300", //
       ],
       background: "bg-orange-500/20",
+    },
+    {
+      name: "I18N",
+      icon: Globe2Icon,
+      foreground: [
+        "text-pink-700",
+        "dark:text-pink-300", //
+      ],
+      background: "bg-pink-500/20",
+    },
+    {
+      name: "A12N",
+      icon: ShieldUserIcon,
+      foreground: [
+        "text-teal-700",
+        "dark:text-teal-300", //
+      ],
+      background: "bg-teal-500/20",
     },
   ];
   return (
