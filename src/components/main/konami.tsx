@@ -22,22 +22,29 @@ const konamiCode = [
   "A",
 ];
 
-export function KonamiCode({ ...props }: ComponentProps<"svg">) {
+export function KonamiCode({ className, ...props }: ComponentProps<"svg">) {
   const t = useTranslations("utils");
   const [, setInput] = useState<string[]>([]);
   const [emojis, setEmojis] = useState<Shape[]>([]);
   const [progress, setProgress] = useState(0);
   const [mustShake, setMustShake] = useState(false);
+  const [mustBlink, setMustBlink] = useState(false);
   const doShake = () => {
     setMustShake(true);
-    setTimeout(() => setMustShake(false), 200);
+    setTimeout(() => {
+      setMustShake(false);
+      setMustBlink(true);
+      setTimeout(() => setMustBlink(false), 3100);
+    }, 600);
   };
   useEffect(
     () =>
       setEmojis(
         [
           "👽", //
+          "⚛️",
           "🤍",
+          "💚",
           "💙",
           "🦀",
           ...PROJECT_EMOJIS,
@@ -62,7 +69,7 @@ export function KonamiCode({ ...props }: ComponentProps<"svg">) {
       decay: 0.933,
       gravity: 0.5,
       origin: { y: 1 },
-      particleCount: 60,
+      particleCount: 120,
       startVelocity: 60,
     });
     setTimeout(() => setProgress(0), 1000);
@@ -115,6 +122,7 @@ export function KonamiCode({ ...props }: ComponentProps<"svg">) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 360 30"
       fill="currentColor"
+      className={cn({ "animate-shake": mustShake }, className)}
       {...props}
     >
       {[
@@ -135,7 +143,10 @@ export function KonamiCode({ ...props }: ComponentProps<"svg">) {
           onClick={() => handlePathClick(i)}
           style={{ pointerEvents: "bounding-box" as never }}
           className={cn(
-            { "opacity-50": i >= progress, "animate-shake": mustShake },
+            {
+              "opacity-50": i >= progress,
+              "animate-blink": mustBlink && i == 0,
+            },
             "transition-opacity",
             "cursor-pointer",
           )}
