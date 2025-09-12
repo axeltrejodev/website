@@ -9,6 +9,7 @@ import Image from "next/image";
 
 import { BrandLogo } from "@/components/globals/brand";
 import { BlurredDiv, BlurredText } from "@/components/globals/motion";
+import { WrapBalancer } from "@/components/globals/utils";
 
 import { Badge } from "@/uva/badge";
 
@@ -100,15 +101,7 @@ export async function About() {
               "mb-3",
             )}
           />
-          <div
-            className={cn(
-              "flex",
-              "flex-wrap",
-              "max-w-96",
-              "gap-3",
-              "mb-3", //
-            )}
-          >
+          <WrapBalancer gap={8} className="mb-3">
             <BlurredDiv delay={0.45} className="inline">
               <Badge
                 className={cn(
@@ -173,7 +166,7 @@ export async function About() {
                 <span>{tB("branding")}</span>
               </Badge>
             </BlurredDiv>
-          </div>
+          </WrapBalancer>
           <BlurredText
             as="p"
             delay={0.75}
