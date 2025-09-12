@@ -7,10 +7,13 @@ import {
   BlurredStagger,
   BlurredText,
 } from "@/components/globals/motion";
+import { WrapBalancer } from "@/components/globals/utils";
 
+import { Badge } from "@/uva/badge";
 import { button } from "@/uva/button";
 import {
   Card,
+  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -24,6 +27,43 @@ import tratumex from "@/components/main/assets/projects/tratumex.png";
 import { PROJECT_EMOJIS } from "@/lib/setup";
 import { cn } from "@/lib/utils";
 
+import { skillsMap } from "./common";
+
+export async function SkillBadge({ name }: { name: string }) {
+  const skill = skillsMap.get(name);
+  if (!skill) return null;
+  return (
+    <Badge
+      className={cn(
+        skill.background,
+        "text-xs",
+        "flex",
+        "items-center",
+        "gap-1.5",
+        "text-primary!",
+        "rounded-lg",
+      )}
+    >
+      <skill.icon
+        className={cn(
+          skill.foreground, //
+          "size-4",
+        )}
+      />
+      <span
+        className={cn(
+          "uppercase", //
+          "font-normal",
+          "font-mono",
+        )}
+        translate="no"
+      >
+        {skill.name}
+      </span>
+    </Badge>
+  );
+}
+
 export async function Projects() {
   const t = await getTranslations("projects");
   const tL = await getTranslations("projects.list");
@@ -32,24 +72,55 @@ export async function Projects() {
     description: string;
     image: StaticImageData;
     href: string;
+    stack: string[];
   }[] = [
     {
       title: tL("eagle.title"),
       description: tL("eagle.description"),
       image: eagle,
       href: "#dev",
+      stack: [
+        "TypeScript",
+        "Tailwind",
+        "Next.js",
+        "Express.js",
+        "Prisma",
+        "PostgreSQL",
+        "Motion",
+        "Zod",
+        "I18N",
+        "A12N",
+      ],
     },
     {
       title: tL("toolhand.title"),
       description: tL("toolhand.description"),
       image: toolhand,
       href: "https://toolhandmx.com",
+      stack: [
+        "TypeScript",
+        "Tailwind",
+        "Next.js",
+        "Resend",
+        "Zod",
+        "Illustrator",
+        "I18N",
+      ],
     },
     {
       title: tL("tratumex.title"),
       description: tL("tratumex.description"),
       image: tratumex,
       href: "https://tratumex.mx",
+      stack: [
+        "TypeScript",
+        "Tailwind",
+        "Next.js",
+        "Sanity",
+        "Resend",
+        "Zod",
+        "I18N",
+      ],
     },
   ];
   return (
@@ -112,13 +183,19 @@ export async function Projects() {
         <BlurredStagger
           delay={0.5}
           className={cn(
-            "grid", //
+            "flex", //
+            "flex-wrap",
             "gap-6 md:gap-8",
-            "grid-cols-[repeat(auto-fit,minmax(12rem,1fr))]",
           )}
         >
           {projects.map((project, index) => (
-            <BlurredDivItem key={index}>
+            <BlurredDivItem
+              key={index}
+              className={cn(
+                "grow-1",
+                "basis-[22rem]", //
+              )}
+            >
               <Card
                 className={cn(
                   "h-full",
@@ -148,11 +225,20 @@ export async function Projects() {
                   />
                 </div>
                 <CardHeader>
-                  <CardTitle className="mb-2 text-balance">
+                  <CardTitle className="text-balance">
                     {PROJECT_EMOJIS[index]} {project.title}
                   </CardTitle>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription className="mt-2">
+                    {project.description}
+                  </CardDescription>
                 </CardHeader>
+                <CardContent className="my-auto">
+                  <WrapBalancer gap={4}>
+                    {project.stack.map((name, index) => (
+                      <SkillBadge key={index} name={name} />
+                    ))}
+                  </WrapBalancer>
+                </CardContent>
                 <CardFooter className="mt-auto">
                   {project.href !== "#dev" ? (
                     <a

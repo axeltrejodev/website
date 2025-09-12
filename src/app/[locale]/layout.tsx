@@ -3,7 +3,7 @@ import { type Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cascadia_Code, Geist } from "next/font/google";
 import { notFound } from "next/navigation";
 import { type ReactNode } from "react";
 
@@ -22,7 +22,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+const cascadiaCode = Cascadia_Code({
   variable: "--font-default-mono",
   subsets: ["latin"],
 });
@@ -99,7 +99,7 @@ export default async function RootLayout({ children, params }: Props) {
       <body
         className={cn(
           geistSans.variable,
-          geistMono.variable,
+          cascadiaCode.variable,
           "antialiased", //
         )}
       >
