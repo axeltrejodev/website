@@ -17,14 +17,16 @@ import { cn } from "@/lib/utils";
 
 import "../globals.css";
 
-const geistSans = Geist({
+const fontSans = Geist({
   variable: "--font-default-sans",
   subsets: ["latin"],
+  fallback: ["sans-serif"],
 });
 
-const cascadiaCode = Cascadia_Code({
+const fontMono = Cascadia_Code({
   variable: "--font-default-mono",
   subsets: ["latin"],
+  fallback: ["monospace"],
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -98,8 +100,8 @@ export default async function RootLayout({ children, params }: Props) {
     >
       <body
         className={cn(
-          geistSans.variable,
-          cascadiaCode.variable,
+          fontSans.variable,
+          fontMono.variable,
           "antialiased", //
         )}
       >

@@ -11,8 +11,8 @@ export function MouseTrail() {
   const [hidden, setHidden] = useState(true);
   const namespace = "http://www.w3.org/2000/svg";
   useEffect(() => {
-    const total = 150;
-    const ease = 0.8;
+    const total = 100;
+    const ease = 0.9;
     timeoutRef.current = window.setTimeout(() => setHidden(false), 2000);
     const root = svgRef.current;
     if (!root) return;
@@ -85,13 +85,13 @@ export function MouseTrail() {
       className={cn(
         "z-50",
         "fixed",
+        "invert",
         "inset-0",
         "size-full",
         "transition-opacity",
         "duration-1000",
         "pointer-events-none",
         "mix-blend-difference",
-        "invert",
         "pointer-coarse:hidden",
         { "opacity-0": hidden },
       )}
