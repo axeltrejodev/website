@@ -9,6 +9,8 @@ import { Link } from "@/i18n/navigation";
 
 import { cn } from "@/lib/utils";
 
+import { AudioPlayerButton, AudioPlayerProvider } from "./player";
+
 export async function Hero() {
   const t = await getTranslations("hero");
   return (
@@ -34,7 +36,10 @@ export async function Hero() {
             "text-center",
             "max-w-3xl",
             "w-full",
-            "mx-auto", //
+            "mx-auto",
+            "flex",
+            "flex-col",
+            "items-center",
           )}
         >
           <BlurredDiv>
@@ -89,12 +94,21 @@ export async function Hero() {
               "font-medium",
             )}
           />
-          <BlurredDiv delay={1.75}>
+          <BlurredDiv
+            delay={1.75}
+            className={cn(
+              "flex", //
+              "items-center",
+              "justify-center",
+              "relative",
+              "mt-6",
+            )}
+          >
             <Link
               href="#contact"
               className={cn(
                 button({ size: "large" }),
-                "mt-6 px-8 py-6",
+                "px-8 py-6",
                 "rounded-full",
                 "font-bold",
                 "text-base",
@@ -102,6 +116,15 @@ export async function Hero() {
             >
               {t("contactMe")}
             </Link>
+            <AudioPlayerProvider src="/bundle.enc">
+              <AudioPlayerButton
+                className={cn(
+                  "absolute", //
+                  "tall:-bottom-13",
+                  "not-tall:-right-13",
+                )}
+              />
+            </AudioPlayerProvider>
           </BlurredDiv>
         </div>
       </div>
@@ -109,8 +132,9 @@ export async function Hero() {
         delay={2}
         className={cn(
           "absolute", //
-          "bottom-12",
-          "not-tall:hidden",
+          "tall:bottom-6",
+          "bottom-2",
+          "short:hidden",
         )}
       >
         <Link

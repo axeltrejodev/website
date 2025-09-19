@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @custom-variant tall (@media (height >= 48rem));
+@custom-variant short (@media (height <= 40rem));
 
 @theme inline {
   /* Fonts */
@@ -157,5 +158,14 @@
   25%,
   75% {
     opacity: 100%;
+  }
+}
+
+@keyframes spinner-fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.125;
   }
 }
